@@ -181,7 +181,7 @@
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
                             <h5 class="font-weight-bold mb-1">schoolar</h5>
                             <p class="mb-2"><strong>Mistral Soc. Coop. Soliale Onlus | Brescia, Italia</strong> | <small>17 April 2023 - 15 June 2023</small></p>
-                            <p>Web Development, Photo and Video Editor, Maintenance of Computer Equipment</p>
+                            <br>Web Development, Photo and Video Editor, Maintenance of Computer Equipment</p>
                         </div>
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
@@ -326,27 +326,28 @@
                 <div class="col-lg-8">
                     <div class="contact-form text-center">
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <form action="https://formspree.io/f/xeojbrvb" method="POST">
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
-                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
-                                        required="required" data-validation-required-message="Please enter your name" />
+                                    <input type="text" name="name" class="form-control p-4" id="name" placeholder="Your Name"
+                                        data-validation-required-message="Please enter your name" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group col-sm-6">
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
-                                        required="required" data-validation-required-message="Please enter your email" />
+                                    <input type="email" name="email" class="form-control p-4" id="email" placeholder="Your Email"
+                                        data-validation-required-message="Please enter your email" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
+                        <!--
                             <div class="control-group">
                                 <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
-                                    required="required" data-validation-required-message="Please enter a subject" />
+                                    data-validation-required-message="Please enter a subject" />
                                 <p class="help-block text-danger"></p>
                             </div>
+                        -->
                             <div class="control-group">
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
-                                    required="required"
+                                <textarea name="message" class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
                                     data-validation-required-message="Please enter your message"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
